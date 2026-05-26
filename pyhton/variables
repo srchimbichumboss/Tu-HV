@@ -1,0 +1,23 @@
+#variables
+"""
+sirven para guardar datos en memoria
+"""
+my_name = "tommy"
+print(my_name)
+
+age = 21
+print(age)
+age = 23
+print(age)
+age = 44
+print(age)
+
+""""
+tipado dinamico
+"""
+#tipado fuwrte: python no realiza tipados dinamicos de tipo automaticos
+
+2+2
+#f-string literal de cadena de formato
+ 
+print(f"hola me llamo {my_name} ,y tengo {age-24} años")

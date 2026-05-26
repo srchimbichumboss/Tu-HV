@@ -1,0 +1,19 @@
+#Problema 2: La juguetería “Mundo Mágico” realiza envíos nacionales
+#en su campaña “Sonrisas por correo”. Para calcular el costo del envío,
+#se necesita conocer el peso total del pedido.
+"""
+Datos:
+- Cada payaso de tela pesa 112 gramos.
+- Cada muñeca clásica pesa 75 gramos.
+El programa debe:
+- Solicitar la cantidad de payasos y muñecas en el pedido.
+- Calcular y mostrar el peso total en gramos con un mensaje claro.
+"""
+#Datos:
+pasaso_de_tela = 112
+muñeca_clasica = 75
+#entrada:
+cantidad_cliente = int(input("ingrese la cantidad de payasos:"))
+cantidad_cliente2 = int(input("ingrese la cantidad de muñecas:"))
+#salida:
+print("la cantidad de gramos es:",cantidad_cliente*(pasaso_de_tela) + cantidad_cliente2*(muñeca_clasica))

@@ -1,0 +1,25 @@
+#la ternanria un if -else
+edad = 18
+mensaje = "es mayor de edad" if edad 18 else "es menor de edad"
+print(mensaje)
+
+import os
+print(clear)
+
+
+"""
+listas
+"""
+
+list[1 , 2 ,3, 4, 5]
+list2["manzanas","peras","numeros"]
+list3["uno","dos","tres","cuatro","cinco"]
+list4[2,1][4,1][5,6]
+matrix = [1,2][4,7]
+ 
+ print(list)
+ print(list2)
+ print(list3)
+ print(list4)
+ print(matrix)
+ 

@@ -1,3 +1,13 @@
+"""Problema 4: Una tienda minorista en línea necesita optimizar su
+proceso de reposición de inventario. El gerente requiere un sistema que
+pueda revisar el stock actual de varios productos, compararlo con un
+umbral de seguridad y recomendar la cantidad a pedir. Además, se debe
+clasificar la prioridad de cada producto basándose en su nivel de stock.
+Desarrollar un programa en Python que procese un conjunto de datos de
+productos (nombre, stock actual, y ventas mensuales promedio), calcule
+si se necesita un pedido, y determine la prioridad de reposición."""
+
+
 INVENTARIO = [
     {"producto": "Camisa Casual",  "stock": 12, "ventas_prom": 5},
     {"producto": "Pantalón Denim", "stock": 4,  "ventas_prom": 8},

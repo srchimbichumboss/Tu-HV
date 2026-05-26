@@ -1,0 +1,71 @@
+#La empresa de energía “LowCost” necesita un sistema
+"""
+que permita clasificar el consumo mensual en kWh y aplicar los
+ajustes correspondientes en la facturación.
+"""
+"""
+El programa debe:
+1) Solicitar al usuario el consumo mensual en kWh.
+2) Clasificar el consumo en:
+- Bajo: menos de 150 kWh.
+- Medio: entre 150 kWh y 350 kWh.
+- Alto: más de 350 kWh.
+"""
+"""
+3) Calcular el valor base del consumo usando el costo por kWh:
+Costo por kWh = 𝟑𝟐𝟎. 𝟓 COP
+4) Aplicar los ajustes:
+a. Consumo bajo: descuento del 5%.
+b. Consumo medio: sin ajuste.
+c. Consumo alto: recargo del 12%.
+"""
+"""
+Salida esperada:
+2
+- Categoría del consumo.
+- Valor base.
+- Porcentaje de descuento o recargo aplicado.
+- Valor final a pagar.
+Ejemplo:
+# Ingrese consumo mensual (kWh): 400
+# Categoría: Alto consumo
+# Valor base: $248,200.00
+# Recargo aplicado: 12%
+# Total a pagar: $278,384.00
+"""
+#clasificacion de consumo (rangos)
+consumo_bajo_max = 150
+consumo_medio_max = 350
+#costo por KWH
+costo_por_kwh = 320.5
+#porcentajes de ajuste
+descuento_bajo = 0.05
+ajuste_medio = 0.0
+recargo_alto = 0.12
+#entradas
+total_consumo = float(input("Ingrese consumo mensual (kWh): "))
+#clasificar y calcular
+if total_consumo < consumo_bajo_max:
+    categoria = "Bajo consumo"
+    valor_base = total_consumo * costo_por_kwh
+    ajuste_porcentaje = descuento_bajo
+    ajuste_descripcion = f"Descuento aplicado: {descuento_bajo * 100}%"
+elif total_consumo <= consumo_medio_max:
+    categoria = "Medio consumo"
+    valor_base = total_consumo * costo_por_kwh
+    ajuste_porcentaje = ajuste_medio
+    ajuste_descripcion = "Sin ajuste"
+else:
+    categoria = "Alto consumo"
+    valor_base = total_consumo * costo_por_kwh
+    ajuste_porcentaje = recargo_alto
+    ajuste_descripcion = f"Recargo aplicado: {recargo_alto * 100}%"
+#calcular total
+valor_final = valor_base * (1 + ajuste_porcentaje)
+#salida
+print(f"Categoría: {categoria}")
+print(f"Valor base: ${valor_base:,.2f}")
+print(ajuste_descripcion)
+print(f"Total a pagar: ${valor_final:,.2f}")
+
+
