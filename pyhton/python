@@ -1,0 +1,6 @@
+print("hola mundo")
+print('aja esa monda que')
+print("hey","no que esa","vaina mejor dime")
+print("nojoda mira","esa monda",sep="----")
+print("esto se imprime en una linea",end=" ")
+print(69)
